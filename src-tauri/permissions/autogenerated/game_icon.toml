@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-game-icon"
+description = "Enables the game_icon command without any pre-configured scope."
+commands.allow = ["game_icon"]
+
+[[permission]]
+identifier = "deny-game-icon"
+description = "Denies the game_icon command without any pre-configured scope."
+commands.deny = ["game_icon"]

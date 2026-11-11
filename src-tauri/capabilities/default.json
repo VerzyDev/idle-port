@@ -1,0 +1,33 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "default",
+  "webviews": ["ui"],
+  "permissions": [
+    "core:default",
+    "allow-get-state",
+    "allow-add-game",
+    "allow-remove-game",
+    "allow-add-session",
+    "allow-remove-session",
+    "allow-update-session",
+    "allow-select-session",
+    "allow-set-view",
+    "allow-set-covered",
+    "allow-set-running",
+    "allow-switch-group",
+    "allow-reload-session",
+    "allow-home-session",
+    "allow-pop-out",
+    "allow-update-settings",
+    "allow-test-alert",
+    "allow-get-overview",
+    "allow-vault-unlock",
+    "allow-vault-lock",
+    "allow-vault-set-master",
+    "allow-vault-save-login",
+    "allow-vault-forget",
+    "allow-vault-username",
+    "allow-vault-fill",
+    "allow-game-icon"
+  ]
+}

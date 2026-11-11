@@ -1,0 +1,29 @@
+[package]
+name = "idleport"
+version = "0.1.0"
+edition = "2021"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = ["tray-icon", "unstable"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+keyring = { version = "3", features = ["windows-native"] }
+ureq = { version = "2", features = ["json"] }
+aes-gcm = "0.10"
+argon2 = "0.5"
+base64 = "0.22"
+sysinfo = "0.40.1"
+webview2-com = "0.39"
+windows-core = "0.62"
+wry = { version = "0.57", default-features = false, features = ["os-webview"] }
+notify-rust = "4"
+raw-window-handle = "0.6"
+
+[profile.release]
+codegen-units = 1
+lto = true
+strip = true
+panic = "abort"

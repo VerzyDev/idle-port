@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-switch-group"
+description = "Enables the switch_group command without any pre-configured scope."
+commands.allow = ["switch_group"]
+
+[[permission]]
+identifier = "deny-switch-group"
+description = "Denies the switch_group command without any pre-configured scope."
+commands.deny = ["switch_group"]

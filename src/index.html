@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IdlePort</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <aside id="sidebar">
+      <header class="brand">
+        <img src="assets/logo.png" alt="" class="brand-logo" />
+        <span class="brand-name">Idle<span>Port</span></span>
+        <button id="open-settings" class="icon-btn" data-icon="gear" title="Configurações"></button>
+      </header>
+      <section id="groups"></section>
+      <nav id="games"></nav>
+      <footer class="sidebar-footer">
+        <button id="new-game" class="btn primary block" data-icon="plus">Adicionar jogo</button>
+      </footer>
+    </aside>
+
+    <main>
+      <div id="toolbar">
+        <div id="title"></div>
+        <div id="status"></div>
+        <div id="views" role="tablist">
+          <button data-view="focus" data-icon="focus" title="Foco: uma conta por vez"><span>Foco</span></button>
+          <button data-view="main" data-icon="main" title="Principal: uma grande e miniaturas"><span>Principal</span></button>
+          <button data-view="grid" data-icon="grid" title="Grade: todas juntas"><span>Grade</span></button>
+          <button data-view="panel" data-icon="panel" title="Painel: consumo e histórico"><span>Painel</span></button>
+        </div>
+        <div id="actions" hidden>
+          <button id="fill" class="icon-btn boxed" data-icon="key" title="Preencher login salvo"></button>
+          <button id="popout" class="icon-btn boxed" data-icon="popout" title="Abrir em outra janela (outro monitor)"></button>
+          <button id="reload" class="icon-btn boxed" data-icon="reload" title="Recarregar"></button>
+          <button id="home" class="icon-btn boxed" data-icon="home" title="Voltar para a página inicial do jogo"></button>
+        </div>
+      </div>
+      <section id="viewport"></section>
+    </main>
+
+    <div id="tiles"></div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

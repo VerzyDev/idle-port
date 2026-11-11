@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package
+  xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+  xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+  xmlns:uap10="http://schemas.microsoft.com/appx/manifest/uap/windows10/10"
+  xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities"
+  IgnorableNamespaces="uap uap10 rescap">
+  <Identity Name="IdlePort" Publisher="CN=IdlePort" Version="0.1.0.0" ProcessorArchitecture="x64" />
+  <Properties>
+    <DisplayName>IdlePort</DisplayName>
+    <PublisherDisplayName>IdlePort</PublisherDisplayName>
+    <Logo>assets\StoreLogo.png</Logo>
+    <uap10:AllowExternalContent>true</uap10:AllowExternalContent>
+  </Properties>
+  <Resources>
+    <Resource Language="pt-br" />
+  </Resources>
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.19041.0" MaxVersionTested="10.0.26100.0" />
+  </Dependencies>
+  <Capabilities>
+    <rescap:Capability Name="runFullTrust" />
+  </Capabilities>
+  <Applications>
+    <Application Id="IdlePort" Executable="idleport.exe" uap10:TrustLevel="mediumIL" uap10:RuntimeBehavior="win32App">
+      <uap:VisualElements
+        DisplayName="IdlePort"
+        Description="IdlePort"
+        BackgroundColor="transparent"
+        Square150x150Logo="assets\Square150x150Logo.png"
+        Square44x44Logo="assets\Square44x44Logo.png"
+        AppListEntry="none" />
+    </Application>
+  </Applications>
+</Package>
